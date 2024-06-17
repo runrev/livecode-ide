@@ -459,8 +459,6 @@ function revStackNameIsIDEStack pStackName
       return true
    else if pStackName begins with "com.livecode." then
       return true
-   else if pStackName is among the lines of revInternal__ListLoadedLibraries() then
-      return true
    else
       return pStackName begins with "rev"
    end if   
